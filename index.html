@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Invoices</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Clients</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Expenses</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <svg
+          class="header__bell-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C7.589 2 4 5.589 4 10v5c0 1.216-.876 2.663-1.707 3.707-.391.491-.293 1.185.293 1.5A.998.998 0 0 0 3 21h18a.997.997 0 0 0 .414-1.793c-.586-.316-.684-1.009-.293-1.5C20.876 17.663 20 16.216 20 15v-5c0-4.411-3.589-8-8-8zm-2 18a2.002 2.002 0 0 0 4 0h-4z"
+          />
+        </svg>
+        <div class="header__profile">
+          <span class="header__profile-initials">IR</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="cashflow">
+        <div class="cashflow__container">
+          <div class="cashflow__title">Cashflow</div>
+          <div class="cashflow__divider"></div>
+          <div class="cashflow__filter">
+            <button class="cashflow__filter-option">Last 7 Days</button>
+            <button class="cashflow__filter-option">Last 30 Days</button>
+            <button class="cashflow__filter-option">All-time</button>
+          </div>
+        </div>
+        <button class="cashflow__new-invoice">+ New Invoice</button>
+      </section>
+      <section class="summary">
+        <div class="summary__item">
+          <div class="summary__header">
+            <span class="summary__title">Revenue</span>
+            <span class="summary__percentage">+4.75%</span>
+          </div>
+          <div class="summary__amount">$405,091.00</div>
+        </div>
+        <div class="summary__item">
+          <div class="summary__header">
+            <span class="summary__title">Overdue invoices</span>
+            <span class="summary__percentage">+54.02%</span>
+          </div>
+          <div class="summary__amount">$12,787.00</div>
+        </div>
+        <div class="summary__item">
+          <div class="summary__header">
+            <span class="summary__title">Outstanding invoices 3</span>
+            <span class="summary__percentage">-1.39%</span>
+          </div>
+          <div class="summary__amount">$245,988.00</div>
+        </div>
+        <div class="summary__item">
+          <div class="summary__header">
+            <span class="summary__title">Expenses</span>
+            <span class="summary__percentage">+10.18%</span>
+          </div>
+          <div class="summary__amount">$30,156.00</div>
+        </div>
+      </section>
+      <section class="recent-activity">
+        <h2 class="recent-activity__title">Recent Activity</h2>
+
+        <div class="recent-activity__date">Today</div>
+
+        <div class="recent-activity__item">
+          <div class="recent-activity__left">
+            <div class="recent-activity__icon"></div>
+            <div class="recent-activity__details">
+              <span class="recent-activity__amount"
+                >$17,000.00
+                <span
+                  class="recent-activity__status recent-activity__status--paid"
+                  >Paid</span
+                ></span
+              >
+              <span class="recent-activity__subtext">$500 tax</span>
+            </div>
+          </div>
+          <div class="recent-activity__middle">
+            <span class="recent-activity__description">Reform</span>
+            <span class="recent-activity__subtext">Website redesign</span>
+          </div>
+          <div class="recent-activity__right">
+            <span class="recent-activity__action">View transaction</span>
+            <span class="recent-activity__subtext">Invoice #00012</span>
+          </div>
+        </div>
+
+        <div class="recent-activity__item">
+          <div class="recent-activity__left">
+            <div class="recent-activity__icon"></div>
+            <div class="recent-activity__details">
+              <span class="recent-activity__amount"
+                >$9,500.00
+                <span
+                  class="recent-activity__status recent-activity__status--paid"
+                  >Paid</span
+                ></span
+              >
+              <span class="recent-activity__subtext">$300 tax</span>
+            </div>
+          </div>
+          <div class="recent-activity__middle">
+            <span class="recent-activity__description">Vortex</span>
+            <span class="recent-activity__subtext">Marketing strategy</span>
+          </div>
+          <div class="recent-activity__right">
+            <span class="recent-activity__action">View transaction</span>
+            <span class="recent-activity__subtext">Invoice #00013</span>
+          </div>
+        </div>
+
+        <div class="recent-activity__item">
+          <div class="recent-activity__left">
+            <div class="recent-activity__icon"></div>
+            <div class="recent-activity__details">
+              <span class="recent-activity__amount"
+                >$25,000.00
+                <span
+                  class="recent-activity__status recent-activity__status--paid"
+                  >Paid</span
+                ></span
+              >
+              <span class="recent-activity__subtext">$1,200 tax</span>
+            </div>
+          </div>
+          <div class="recent-activity__middle">
+            <span class="recent-activity__description">Nebula</span>
+            <span class="recent-activity__subtext">App development</span>
+          </div>
+          <div class="recent-activity__right">
+            <span class="recent-activity__action">View transaction</span>
+            <span class="recent-activity__subtext">Invoice #00014</span>
+          </div>
+        </div>
+
+        <div class="recent-activity__date">Yesterday</div>
+
+        <div class="recent-activity__item">
+          <div class="recent-activity__left">
+            <div class="recent-activity__icon"></div>
+            <div class="recent-activity__details">
+              <span class="recent-activity__amount"
+                >$17,000.00
+                <span
+                  class="recent-activity__status recent-activity__status--paid"
+                  >Paid</span
+                ></span
+              >
+              <span class="recent-activity__subtext">$500 tax</span>
+            </div>
+          </div>
+          <div class="recent-activity__middle">
+            <span class="recent-activity__description">Reform</span>
+            <span class="recent-activity__subtext">Website redesign</span>
+          </div>
+          <div class="recent-activity__right">
+            <span class="recent-activity__action">View transaction</span>
+            <span class="recent-activity__subtext">Invoice #00012</span>
+          </div>
+        </div>
+      </section>
+      <section class="recent-clients">
+        <div class="recent-clients__header">
+          <h2 class="recent-clients__title">Recent Clients</h2>
+          <a href="#" class="recent-clients__view-all">View All</a>
+        </div>
+
+        <div class="recent-clients__cards">
+          <div class="recent-clients__card">
+            <div class="recent-clients__card-header">
+              <div class="recent-clients__icon"></div>
+              <span class="recent-clients__client-name">Client 1</span>
+              <div class="recent-clients__more-options">...</div>
+            </div>
+            <div class="recent-clients__card-body">
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Last invoice:</span>
+                <span class="recent-clients__date">08/10/2024</span>
+              </div>
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Amount:</span>
+                <div>
+                  <span class="recent-clients__amount">$4,800.00</span>
+                  <span
+                    class="recent-clients__status recent-clients__status--overdue"
+                    >Overdue</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recent-clients__card">
+            <div class="recent-clients__card-header">
+              <div class="recent-clients__icon"></div>
+              <span class="recent-clients__client-name">Client 2</span>
+              <div class="recent-clients__more-options">...</div>
+            </div>
+            <div class="recent-clients__card-body">
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Last invoice:</span>
+                <span class="recent-clients__date">08/09/2024</span>
+              </div>
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Amount:</span>
+                <div>
+                  <span class="recent-clients__amount">$4,800.00</span>
+                  <span
+                    class="recent-clients__status recent-clients__status--overdue"
+                    >Overdue</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recent-clients__card">
+            <div class="recent-clients__card-header">
+              <div class="recent-clients__icon"></div>
+              <span class="recent-clients__client-name">Client 3</span>
+              <div class="recent-clients__more-options">...</div>
+            </div>
+            <div class="recent-clients__card-body">
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Last invoice:</span>
+                <span class="recent-clients__date">08/08/2024</span>
+              </div>
+              <div class="recent-clients__row">
+                <span class="recent-clients__label">Amount:</span>
+                <div>
+                  <span class="recent-clients__amount">$4,800.00</span>
+                  <span
+                    class="recent-clients__status recent-clients__status--overdue"
+                    >Overdue</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

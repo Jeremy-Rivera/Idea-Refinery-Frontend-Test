@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/*Header Block, CSS follows BEM Methodology*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  height: 60px;
+  background-color: #f8f9fa;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.header__nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header__menu-item {
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__bell-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.header__profile {
+  width: 50px;
+  height: 50px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__profile-initials {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Cashflow styles*/
+
+.cashflow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.cashflow__container {
+  display: flex;
+}
+.cashflow__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cashflow__divider {
+  width: 1px;
+  height: 24px;
+  background-color: #d3d3d3;
+  margin: 0 20px;
+}
+
+.cashflow__filter {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.cashflow__filter-option {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cashflow__filter-option:hover {
+  background-color: white;
+}
+
+.cashflow__new-invoice {
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*Summary block*/
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__item {
+  width: 25%;
+  height: 120px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.summary__percentage {
+  font-size: 16px;
+  color: #888;
+}
+
+.summary__amount {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+/*Recent activity*/
+.recent-activity {
+  background-color: #fff;
+}
+
+.recent-activity__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.recent-activity__date {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.recent-activity__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.recent-activity__left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.recent-activity__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.recent-activity__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-activity__amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recent-activity__status {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.recent-activity__subtext {
+  font-size: 14px;
+  color: #888;
+}
+
+.recent-activity__middle {
+  display: flex;
+  text-align: center;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.recent-activity__description {
+  font-size: 18px;
+  color: #333;
+}
+
+.recent-activity__right {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-activity__action {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.recent-activity__action:hover {
+  text-decoration: underline;
+}
+
+/*Recent activity*/
+
+.recent-clients {
+  padding: 20px 35px;
+  background-color: #fff;
+}
+
+.recent-clients__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent-clients__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recent-clients__view-all {
+  color: #6f42c1;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.recent-clients__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-clients__card {
+  width: 32%;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recent-clients__card-header {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recent-clients__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.recent-clients__client-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  flex-grow: 1;
+}
+
+.recent-clients__more-options {
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.recent-clients__card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-clients__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.recent-clients__label {
+  font-size: 14px;
+  color: #666;
+}
+
+.recent-clients__date,
+.recent-clients__amount {
+  font-size: 14px;
+  color: #333;
+}
+
+.recent-clients__status {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
