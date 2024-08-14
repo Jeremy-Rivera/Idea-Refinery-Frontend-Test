@@ -462,3 +462,123 @@
   border-radius: 4px;
   font-size: 14px;
 }
+
+/*I'm going to apologize in advance, I was told to make it responsive up to 1200px, I'm a terrible designer */
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Header Block */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .header__nav {
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header__actions {
+    margin-top: 10px;
+  }
+
+  /* Cashflow Section */
+  .cashflow {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .cashflow__container {
+    display: flex;
+    align-items: center;
+  }
+  .cashflow__title {
+    font-size: 14px;
+  }
+
+  .cashflow__filter {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .cashflow__new-invoice {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  /* Summary Block */
+  .summary {
+    flex-direction: column;
+  }
+
+  .summary__item {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .summary__header {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary__title {
+    font-size: 14px;
+  }
+
+  .summary__amount {
+    font-size: 24px;
+  }
+
+  /* Recent Activity */
+  .recent-activity {
+    padding: 15px;
+  }
+
+  .recent-activity__title {
+    font-size: 18px;
+  }
+
+  .recent-activity__item {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .recent-activity__left,
+  .recent-activity__right {
+    width: 100%;
+  }
+
+  .recent-activity__amount {
+    font-size: 16px;
+  }
+
+  .recent-clients {
+    padding: 15px;
+  }
+
+  .recent-clients__header {
+    font-size: 20px;
+  }
+
+  .recent-clients__cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .recent-clients__card {
+    width: 100%;
+  }
+}
