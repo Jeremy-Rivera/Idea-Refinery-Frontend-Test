@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 /*Header Block, CSS follows BEM Methodology*/
@@ -10,13 +10,13 @@
   align-items: center;
   padding: 0 35px;
   height: 60px;
-  background-color: #f8f9fa;
+  border-bottom: 1px solid #9399a5;
 }
 
 .header__logo {
   width: 50px;
   height: 50px;
-  background-color: #6f42c1;
+  background-color: #4741df;
   border-radius: 50%;
   margin-right: auto;
 }
@@ -33,9 +33,6 @@
   display: flex;
   gap: 20px;
   justify-content: center;
-}
-
-.header__menu-item {
 }
 
 .header__link {
@@ -61,7 +58,7 @@
 .header__profile {
   width: 50px;
   height: 50px;
-  background-color: #6c757d;
+  background-color: #9399a5;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -119,11 +116,11 @@
 }
 
 .cashflow__new-invoice {
-  background-color: #6f42c1;
+  background-color: #4741df;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 7px;
   font-size: 14px;
   cursor: pointer;
 }
@@ -168,6 +165,7 @@
   font-weight: bold;
   color: #000;
   text-align: center;
+  font-family: "Rethink Sans";
 }
 
 /*Recent activity*/
@@ -183,7 +181,7 @@
 }
 
 .recent-activity__date {
-  background-color: #f0f0f0;
+  background-color: #f8f9fb;
   padding: 10px 0;
   font-size: 18px;
   color: #555;
@@ -207,7 +205,7 @@
 .recent-activity__icon {
   width: 40px;
   height: 40px;
-  background-color: #6f42c1;
+  background-color: #4741df;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -263,7 +261,7 @@
 
 .recent-activity__action {
   font-size: 16px;
-  color: #007bff;
+  color: #4741df;
   cursor: pointer;
 }
 
@@ -292,7 +290,7 @@
 }
 
 .recent-clients__view-all {
-  color: #6f42c1;
+  color: #4741df;
   text-decoration: none;
   font-size: 16px;
 }
@@ -312,7 +310,7 @@
 }
 
 .recent-clients__card-header {
-  background-color: #f0f0f0;
+  background-color: #f8f9fb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -322,7 +320,7 @@
 .recent-clients__icon {
   width: 40px;
   height: 40px;
-  background-color: #6f42c1;
+  background-color: #4741df;
   border-radius: 50%;
   display: flex;
   align-items: center;
